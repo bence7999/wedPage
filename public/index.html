@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <style>
+        #zugliget, #torokbalint {
+            width: 100%;
+            height: 400px;
+            background-color: grey;
+        }
+
+        .circle {
+            /*background-color: #daaeca;*/
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border-width:10px;
+            text-align: center;
+            margin: auto;
+            font-size: 20px;
+            font-weight: bold;
+            /*background-image: url("texture-brown-paper_1253-23.jpg");*/
+        }
+        @font-face {
+            font-family: "customFont";
+            src: url("Honeymoon Personal Use.ttf");
+        }
+
+        @font-face {
+            font-family: "customFont2";
+            src: url("Autumn in November.ttf");
+        }
+
+        .customFont {
+            font-family: "Gabriola";
+            font-size: 72px;
+        }
+        .titleFont {
+            font-family: "Gabriola";
+        }
+        .navBarSize {
+            font-size: 24px;
+        }
+        h3 {
+            font-size: large;
+        }
+
+        #img1 {display:block;}
+        #img2 {display:none}
+
+        @media only screen and (max-width: 800px) {
+            #img1 {display: none;}
+            #img2 {display: block;}
+            .customFont {
+                font-family: "Gabriola";
+                font-size: 42px;
+            }
+            body {
+
+            }
+        }
+
+        body{
+            /*background-image: url("texture-brown-paper_1253-23.jpg");*/
+        }
+    </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Lilla & Bence</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!--<link rel="shortcut icon" href="/icon.png" /> // title icon -->
+</head>
+
+<body>
+<div class="container">
+
+    <div class="text-center">
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <img id="img1" src="lb-legszebb.png" alt="logo" style="width: 100%;" >
+                <img id="img2" src="lb-legszebb_small.png" alt="logo" style="width: 100%;" >
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 px-0 mt-4">
+                <h2 class="sans font-weight-normal font-size-1 text-center w-100" >
+                <span class="customFont" style="font-weight: bold">
+                    2019. Szeptember 14.
+                </span>
+                </h2>
+            </div>
+        </div>
+
+        <div class="circle border border-dark">
+            <p class="mt-1 pt-3 mb-0">Már csak</p>
+            <p class="mb-0" id="countDown"></p>
+            <p class="mb-0">nap</p>
+        </div><br>
+    </div>
+
+    <!-- Menu -->
+    <div class="row">
+        <div class="col-12">
+            <nav aria-label="navbar navbar-invers">
+                <ol class="breadcrumb text-uppercase justify-content-center">
+                    <li class="breadcrumb-item titleFont navBarSize" >
+                        <a href="#Church" class="text-dark font-weight-bold" >Templom</a>
+                    </li>
+                    <li class="breadcrumb-item titleFont navBarSize" >
+                        <a href="#Party" class="text-dark font-weight-bold" >Lagzi</a>
+                    </li>
+                    <li class="breadcrumb-item titleFont navBarSize" >
+                        <a href="#Involvement" class="text-dark font-weight-bold" >Visszajelzés</a>
+                    </li>
+                    <li class="breadcrumb-item titleFont navBarSize" >
+                        <a href="#Gift" class="text-dark font-weight-bold" >Nászajándék</a>
+                    </li>
+                    <li class="breadcrumb-item titleFont navBarSize" >
+                        <a href="#Music" class="text-dark font-weight-bold" >Zene</a>
+                    </li>
+                        <!--<li class="breadcrumb-item titleFont navBarSize" >-->
+                            <!--<a href="#Travel" class="text-dark font-weight-bold" >Utazás</a>-->
+                        <!--</li>-->
+                    <li class="breadcrumb-item titleFont navBarSize" >
+                        <a href="#Info" class="text-dark font-weight-bold" >Hasznos infók</a>
+                    </li>
+                    <li class="breadcrumb-item titleFont navBarSize" >
+                        <a href="#Contact" class="text-dark font-weight-bold" >Kontakt</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+
+    <!-- Content -->
+
+    <!-- Church -->
+    <div id="Church" class="row mt-1 p-5">
+        <div class="col-12 col-md-6 order-1 order-md-1 p-1">
+            <div class="text-center mt-3">
+                <h1 class="titleFont">Nászmisés esküvőnk</h1>
+            </div>
+            <div class="text-center mt-5">
+                <p class="mb-3">Szeretettel várunk Titeket 2019. szeptember 14-én 15:00-ra, a Zugligeti Szent Család plébániatemplomba.</p>
+                <p>Cím: 1125 Budapest, Szarvas Gábor út 52. </p>
+                <p>A szertartás után egy állófogadásra hívunk Benneteket a templomkertbe!</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 order-12 order-md-12 p-3">
+            <div id="zugliget"></div>
+        </div>
+    </div>
+
+    <!-- Party -->
+    <div class="row">
+        <img alt="delimiter02" src="delimiter_down.png" style="width: 100%;" height="30px" >
+    </div>
+    <div id="Party" class="row mt-1 p-5">
+        <div class="col-12 col-md-6 order-12 order-md-1 p-1">
+            <div id="torokbalint"></div>
+        </div>
+        <div class="col-12 col-md-6 order-1 order-md-12 p-3">
+            <div class="text-center">
+                <h1 class="titleFont">Lakodalom</h1>
+            </div>
+            <div class="mt-5 text-center">
+                <p>Gyertek és ünnepeljetek velünk tovább, egészen hajnalig! </p>
+                <p>A családi vacsora 18:00-kor, a buli pedig 20:00-kor kezdődik.</p>
+                <p> Cím: 2045 Törökbálint, Munkácsy M. u. 83. </p>
+                <p>Munkácsy Mihály Művelődési Ház (MMMH) </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <img alt="delimiter03" src="delimiter_up.png" style="width: 100%;" height="30px" >
+    </div>
+    <!-- Involvement -->
+    <div id="Involvement" class="row mt-1 p-5">
+        <div class="col-12 text-center">
+            <h1 class="titleFont">Visszajelzés</h1>
+            <p>Kérjük, jelezzétek vissza, hogy velünk tudtok-e tartani az este további részében!</p>
+        </div>
+        <form name="involvement-form" class="row w-100">
+            <div class="col-12 col-md-6 order-1 order-md-1 p-3">
+
+                <input class="pl-3" id="attendance" type="radio" name="attendance" value=1 onclick="go()" required>    Tudok jönni<br>
+                <input class="" type="radio" name="attendance" value=0 onclick="nogo()" required>    Sajnos nem tudok jönni<br>
+
+                <label class="pt-3" for="name">Név:</label>
+                <input id="name" name="name" type="text" class="form-control" placeholder="Name" required><br>
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" class="form-control" placeholder="Email"><br>
+            </div>
+            <div id="extraFields" style="display: none;" class="col-12 col-md-6 order-12 order-md-12 p-3">
+                <div >
+                    <label for="adults">Felnőttek száma:</label><br>
+                    <select id="adults" name="adults" class="custom-select ">
+                        <option selected="" value=""></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="3">4</option>
+                    </select><br>
+                    <label class="pt-3" for="children">Gyerekek száma:</label><br>
+                    <select id="children" name="children" class="custom-select">
+                        <option selected="" value=""></option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="3">4</option>
+                        <option value="3">5</option>
+                        <option value="3">6</option>
+                        <option value="3">7</option>
+                    </select><br>
+                    <label class="pt-3" for="intolerance">Étel intolerancia:</label><br>
+                    <input id="intolerance" name="intolerance" type="text" class="form-control" placeholder="glutén, laktóz, ..."><br>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 order-12">
+                <button type="submit">Küldés</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Gift -->
+    <div class="row">
+        <img alt="delimiter04" src="delimiter_down.png" style="width: 100%;" height="30px" >
+    </div>
+    <div id="Gift" class="row mt-1 p-5 text-center" >
+        <div class="col-12 text-center">
+            <div class="col-12 text-center">
+                <h1 class="titleFont">Nászajándék</h1>
+            </div>
+            <p>Nekünk az a legnagyobb ajándék ha velünk ünnepeltek!</p>
+            <p>Ha szeretnétek hozzájárulni a közös életünk kezdetéhez, kérjük, az ajándékra szánt összeget borítékban hozzátok el.</p>
+            <p>Illetve<a href="https://www.wishlistr.com/LillaBence"> itt találtok pár ajándék ötletet!</a> </p>
+        </div>
+    </div>
+
+    <!-- Music -->
+    <div class="row">
+        <img alt="delimiter05" src="delimiter_up.png" style="width: 100%;" height="30px" >
+    </div>
+    <div id="Music" class="row mt-1 p-5">
+        <div class="col-12 text-center">
+            <div class="col-12 text-center">
+                <h1 class="titleFont">Egy kis zene</h1>
+            </div>
+            <p>Azt szeretnénk, hogy sok olyan szám hangozzék el az este folyamán, amit ti is szerettek! Ezért küldjétek el kedvenceiteket nekünk,
+            hogy mindenképpen rophassunk rájuk!</p>
+            <form name="music-form">
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="player">Előadó:</label><br>
+                        <input id="player" name="player" type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="title">Cím:</label><br>
+                        <input id="title" name="title" type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="link">Link:</label><br>
+                        <input id="link" name="link" type="text" class="form-control">
+                    </div>
+                    <button type="submit">Küldés</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+   <!--&lt;!&ndash;&ndash;&gt;-->
+    <!--&lt;!&ndash; Travel &ndash;&gt;-->
+    <!--<div class="row">-->
+        <!--<img alt="delimter0i6" src="delimiter_down.png" style="width: 100%;" height="30px" >-->
+    <!--</div>-->
+    <!--<div id="Travel" class="row mt-1 p-5">-->
+        <!--<div class="col-12">-->
+            <!--<div class="col-12 text-center">-->
+                <!--<h1 class="titleFont">Utazás</h1>-->
+                <!--<p>-->
+                    <!--Ha nem tudod megoldani hogy érkezz és távozz a lakodalomból, létrehosztunk egy google sheet-et, ami felajánlani illetve igényelni tudtok helyeket!-->
+                <!--</p>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!-- Info -->
+    <div class="row">
+        <img alt="delimiter07" src="delimiter_up.png" style="width: 100%;" height="30px" >
+    </div>
+    <div id="Info" class="row mt-1 p-5">
+        <div class="col-12">
+            <div class="col-12 text-center">
+                <h1 class="titleFont">Hasznos infók</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 order-12 order-md-1 p-1">
+                    <h5>
+                        Menetrend
+                    </h5>
+                    <p>
+                        15:00 - Nászmisés esküvő
+                    </p>
+                    <p>
+                        16:00 - Közös fotó a templom előtt és koccintás a kertben
+                    </p>
+                    <p>
+                        18:00 - Családi vacsora
+                    </p>
+                    <p>
+                        20:00 - Lakodalom
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 order-1 order-md-12 p-1">
+                    <h5>
+                        Egyéb infók:
+                    </h5>
+                    <p>
+                        <a href="http://futar.bkk.hu/trip-plan/?fromCoord=47.507124%2C19.024534&fromName=Sz%C3%A9ll%20K%C3%A1lm%C3%A1n%20t%C3%A9r&toCoord=47.518295%2C18.985053&toName=Kuruclesi%20%C3%BAt&fromPlace=Sz%C3%A9ll%20K%C3%A1lm%C3%A1n%20t%C3%A9r%3A%3A47.507124%2C19.024534&toPlace=Kuruclesi%20%C3%BAt%3A%3A47.518295%2C18.985053&selectedItinerary=0&layers=GSVB" >Templom megközelítése tömegközlekedéssel</a>
+                    </p>
+                    <p>
+                        <a href="http://futar.bkk.hu/trip-plan/?fromCoord=47.507124%2C19.024534&fromName=Sz%C3%A9ll%20K%C3%A1lm%C3%A1n%20t%C3%A9r&toCoord=47.431369%2C18.916646&toName=Munk%C3%A1csy%20Mih%C3%A1ly%20utca%20(h%C5%91si%20eml%C3%A9km%C5%B1)&map=13%2F47.501%2F19.053&layers=GSVB&attr=HHHM&fromPlace=Sz%C3%A9ll%20K%C3%A1lm%C3%A1n%20t%C3%A9r%3A%3A47.507124%2C19.024534&toPlace=Munk%C3%A1csy%20Mih%C3%A1ly%20utca%20(h%C5%91si%20eml%C3%A9km%C5%B1)%3A%3A47.431369%2C18.916646&selectedItinerary=0&layers=GSVB">MMMH megközelítése tömegközlekedéssel</a>
+                    </p>
+                    <p>
+                        Parkolás Törökbálinton
+                    </p>
+                    <p>
+                        Menyecsketánc
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="row">
+        <img alt="delimiter08" src="delimiter_down.png" style="width: 100%;" height="30px" >
+    </div>
+    <div id="Contact" class="row mt-1 p-5">
+        <div class="col-12 text-center">
+            <h1 class="titleFont">Kontakt</h1>
+        </div>
+        <div class="col-12 text-center">
+            <p>Bármi kérdéssel, amire itt vagy a meghívóban nem találtok választ, kérjük forduljatok Jankó Flórához: +3620/3797002</p>
+        </div>
+    </div>
+
+    <!-- Thank You -->
+    <div class="row">
+        <img alt="delimiter09" src="delimiter_up.png" style="width: 100%;" height="30px" >
+    </div>
+
+    <div class="row mt-1 p-5">
+        <img src="hatulrol.png" alt="back" style="width: 100%; height: 100%;    " >
+    </div>
+
+
+    <div class="row mt-1 p-5">
+        
+    </div>
+
+    <div id="ThankYou" class="row mt-1 p-5">
+        <div class="col-12">
+
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div class="row">
+
+
+    </div>
+
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script>
+    function go() {
+        // console.log("go");
+        let fields = document.getElementById("extraFields");
+        fields.style.display = "block";
+    }
+    
+    function nogo() {
+        // console.log("nogo");
+        let fields = document.getElementById("extraFields");
+        fields.style.display = "none";
+    }
+</script>
+
+<script>
+
+    function initMap() {
+        // The location of Zugliget
+        let zugliget = {lat: 47.516728, lng: 18.985440};
+        let torokBalint = {lat: 47.429202, lng: 18.913539};
+        // The map, centered at Zugliget
+        let mapZ = new google.maps.Map(
+            document.getElementById('zugliget'), {zoom: 15, center: zugliget});
+        let mapT = new google.maps.Map(
+            document.getElementById('torokbalint'), {zoom: 15, center: torokBalint});
+        // The marker, positioned at Zugliget
+        new google.maps.Marker({position: zugliget, map: mapZ});
+        new google.maps.Marker({position: torokBalint, map: mapT});
+    }
+
+    let countDownDate = new Date("Sept 14, 2019 15:00:00").getTime();
+    let x = setInterval(function() {
+        let now = new Date().getTime();
+        let distance = countDownDate - now;
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("countDown").innerHTML = days /* + "d " + hours + "h "
+            + minutes + "m " + seconds + "s "*/;
+    }, 1000);
+</script>
+<script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3DAvdJb-ugVwDNgfjeMgEa8JLyK20_O8&callback=initMap">
+</script>
+
+<script>
+
+    /*document.getElementById("Gift").addEventListener("click", function(event) {
+        console.log("alma");
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+    });*/
+
+
+</script>
+
+<script>
+    const involvementURL = 'https://script.google.com/macros/s/AKfycbwPY2NNeDnvEWLyHMBsE_JTvG_PWWp-8bZ41zgHaNVr5ezPHWo/exec';
+    const musucURL = 'https://script.google.com/macros/s/AKfycbz6oSXN-CmD-N7-BxR5VCR08b4bLLN5r3qdf8rQRo_B-Dsgpw8/exec';
+    const travelUrl = 'https://script.google.com/macros/s/AKfycby23abw-Ps5qE6td0b6eYOs3gcUN-0rkUo2vGEwOBcyTFlOrZU/exec';
+    const involvement = document.forms['involvement-form'];
+    const music = document.forms['music-form'];
+    const travel = document.forms['travel-form'];
+
+    involvement.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(involvementURL, { method: 'POST', body: new FormData(involvement)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message));
+        involvement.reset();
+    });
+
+    music.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(musucURL, { method: 'POST', body: new FormData(music)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message));
+        music.reset();
+    });
+
+    // travel.addEventListener('submit', e => {
+    //     e.preventDefault();
+    //     fetch(travelUrl, { method: 'POST', body: new FormData(travel)})
+    //         .then(response => console.log('Success!', response))
+    //         .catch(error => console.error('Error!', error.message));
+    //     travel.reset();
+    // })
+</script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<!--<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>-->
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<!--<script>-->
+    <!--// Your web app's Firebase configuration-->
+    <!--var firebaseConfig = {-->
+        <!--apiKey: "AIzaSyBgX1Yc-MLWn_gUaEnwDc_7MqVC_5I30ws",-->
+        <!--authDomain: "lillabence-e008a.firebaseapp.com",-->
+        <!--databaseURL: "https://lillabence-e008a.firebaseio.com",-->
+        <!--projectId: "lillabence-e008a",-->
+        <!--storageBucket: "lillabence-e008a.appspot.com",-->
+        <!--messagingSenderId: "144922917018",-->
+        <!--appId: "1:144922917018:web:0189a0dca53ec387"-->
+    <!--};-->
+    <!--// Initialize Firebase-->
+    <!--firebase.initializeApp(firebaseConfig);-->
+<!--</script>-->
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<!--<script src="/__/firebase/6.0.2/firebase-app.js"></script>-->
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#reserved-urls -->
+
+<!-- Initialize Firebase -->
+<!--<script src="/__/firebase/init.js"></script>-->
+
+</body>
+
+</html>
